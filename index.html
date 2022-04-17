@@ -2,39 +2,63 @@
 <html>
     <head>
         <meta charset ="UTF -8"/>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <title> Home page </title>
     </head>
     <body>
-        <div id = "header">
-         <img class = "center" src ="pictures/85-857608_friendstv-club-friends-logo-white-png.png" alt="Friends logo" width = "320" height="60">
-         <h2 id="subheader">Q U I Z<h2>
-        </div>
-        
-        <div class = "container">
-            <div id="home" class="flex-column flex-center"> 
-            <h1 id="title">ARE YOU READY TO PLAY?</h1>
-            <p id="intro">
-            "Friends" is one of the most iconic sitcoms ever created that inspired this game. <br>
-            The show is about 6 friends living in New York who go through life and learn to navigate through it.
-            <br>
-            <br>
-            If you are a fan on the show you can try to win this game.<br>
-            Each question if answered correctly adds prize money to your score. 
-            <br>
-            <br>
-            This quiz consists of 15 questions. The level of difficulty increases with each question.
-             <br>
-             <br>
-            Are you a real Friends fan? - Prove it!
-            </p>
-            <br>
-            <a href="game.html" class="btn">PLAY</a>
+          <!--Header and subheader-->
+          <header>
+              <div class="container flex"> 
+                  <img class = "logo" src ="pictures/85-857608_friendstv-club-friends-logo-white-png.png" alt="Friends logo" width = "320" height="60">
+                  <h2 id="subheader">Q U I Z</h2>
+              </div>
+            </header
+          >
+          
+          
+          <!--Description-->
+          <section class="content">
+            <div id="home">
+                <h1 id="title">ARE YOU READY TO PLAY?</h1>
+                <br>
+                <h3 id="intro">
+                  "Friends" is one of the most iconic sitcoms ever created that inspired this game. <br>
+                  The show is about 6 friends living in New York who go through life and learn to navigate through it.
+                 <br>
+                 <br>
+                   If you are a fan on the show you can try to win this game.<br>
+                   Each question if answered correctly adds prize money to your score. 
+                 <br>
+                 <br>
+                   This quiz consists of 15 questions. The level of difficulty increases with each question.
+                 <br>
+                 <br>
+                  Are you a real Friends fan? - Prove it!
+                </h3>
+                  <br>
+                <div id="button">
+                  <a href="game.html" class="btn">START</a>
+                </div>
             </div>
-        </div>
-        <footer>
-            <h4>About: <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-            <h4>Contact us:<br>Email: 40490171@live.napier.ac.uk<br>Phone: +77004345672</h4>
-        </footer>
+          </section>
+
+          <!--Footer-->
+          <footer class="footer">
+            <div class="container grid-3">
+              <div>
+                <h2 id="logo-copy">Friends quiz</h2>
+                <h5>Copyright &copy; 2022</h5>
+              </div>
+              <div>
+                 <h4>Contact us:<br>friends-quiz@gmail.com</h4>
+              </div>
+              <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </div>
+            </div>
+          </footer>
     </body>
 </html>

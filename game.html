@@ -2,20 +2,82 @@
 <html>
     <head>
         <meta charset ="UTF -8"/>
-        <link rel="stylesheet" href="game.css">
-        <title> Game page </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/game.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <title>Quiz Page</title>
     </head>
     <body>
-        <header>
-         Friends quiz
-        </header>
-        <div class = "container">
-            <h1>Question 1</h1>
-            <a href="/game.html" class="btn">Play</a>
-            <a href="/game.html" class="btn">Play</a>
-            <a href="/game.html" class="btn">Play</a>
-            <a href="/game.html" class="btn">Play</a>
+          <!--Header and subheader-->
+          <header>
+              <div class="container flex"> 
+                  <img class = "logo" src ="pictures/85-857608_friendstv-club-friends-logo-white-png.png" alt="Friends logo" width = "320" height="60">
+                  <h2 id="subheader">Q U I Z</h2>
+              </div>
+            </header>
+          
+          <!--Quiz-->
+          <section class="content">
+            <div id="home">
+                <div id="hud">
+                  <div class="hud-item">
+                    <p id="progressText" class="hud-prefix">
+                       Question
+                    </p>
+                    <div id="progressBar">
+                      <div id="progressBarFull"></div>
+                    </div>
+                  </div>
+                  <div class="hud-item">
+                    <p class="hud-prefix">
+                      Score
+                    </p>
+                    <h1 class="hud-main-text" id="score">
+                      0
+                    </h1>
+                  </div>
+                </div>
+                <img id = "related" class="justify-center flex-column" src ="pictures/4_RLP_MDG_071216ROSS_31JPG (1).jpg" alt="Friends picture">
+                <h1 id="question" class="justify-center flex-column">What is the answer to this question?</h1>
+                <div class="grid-container"> 
+                  <div class="choice-container">
+                    <p class="choice-prefix">A</p>
+                    <p class="choice-text" data-number="1">Choice</p>
+                  </div>
+                  <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text" data-number="2">Choice 2</p>
+                  </div>
+                  <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text" data-number="3">Choice 3</p>
+                  </div>
+                  <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text" data-number="4">Choice 4</p>
+                  </div>
+                </div>
             </div>
-        </div>
+          </section>
+
+
+          <!--Footer-->
+          <footer class="footer">
+            <div class="container grid-3">
+              <div>
+                <h2 id="logo-copy">Friends quiz</h2>
+                <h5>Copyright &copy; 2022</h5>
+              </div>
+              <div>
+                 <h4>Contact us:<br>friends-quiz@gmail.com</h4>
+              </div>
+              <div class="social">
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              </div>
+            </div>
+          </footer>
+          <script src="game.js"></script>
     </body>
 </html>
