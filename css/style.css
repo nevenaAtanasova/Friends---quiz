@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "Gabriel Weiss' Friends Font"; src: url('GABRWFFR.TTF')
+}
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body {
+    height: 100vh;
+    background: #f1f1f1;
+}
+ 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration:none;
+    color:white
+}
+
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow:auto;
+    padding: 0px;
+    padding-top: 20px;
+}
+
+.flex {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 20%;
+}
+
+header {
+    background-color: #333333;
+    padding:40px;
+}
+#subheader {
+    color:white;
+    font-family: "Gabriel Weiss' Friends Font";
+    font-weight: normal;
+    font-style: normal;
+    text-shadow: 0 0 3px black;
+}
+
+.content {
+    width:100%;
+    min-height: 80vh;
+    text-align: center;
+    display:inline-block;
+    border: 2rem solid white;
+    /*justify-content: center;*/
+    /*padding: 30px 20px;*/
+    
+}
+
+#home {
+    background-color: #333333;
+    padding: 40px;
+    border-radius: 5px;
+}
+#title {
+    color: white;
+    font-family: "Gabriel Weiss' Friends Font";
+    font-weight: normal;
+    font-style: normal;
+}
+
+#intro {
+    color: white;
+    font-weight: bold;
+    font-family: "Comic Sans MS";
+    font-style: normal;
+    white-space:normal;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#button {
+    padding-top: 30px;
+}
+.btn {
+   background-color: white;
+   color: #333333;
+   font-weight: bold;
+   font-family: "Work Sans",sans-serif;
+   font-size: 1.2em;
+   letter-spacing: 0.06em;
+   padding: 12px 28px;
+   border-radius: 20px;
+   border: 3px solid #42a2d6;
+   transition-duration: 0.4s;
+   text-decoration: none;
+   box-shadow: 0 0 6px  black;
+}
+
+.btn:hover {
+    background-color: #42a2d6;
+    color: white;
+    text-shadow: 0 0 3px black;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 3px black;
+    position:relative;
+}
+
+#logo-copy {
+   font-family: "Gabriel Weiss' Friends Font";
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+  } 
+
+.footer .social a {
+    margin: 0 10px;
+}
+  .fa-github:hover {
+    color: #000000;
+  }
+  
+  .fa-facebook:hover {
+    color: #1773EA;
+  }
+  
+  .fa-instagram:hover {
+    color: #B32E87;
+  }
+
