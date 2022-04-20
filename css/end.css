@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+#message {
+    padding-top: 15rem;
+    font-size: 4rem;
+    color: white;
+    font-family: "Gabriel Weiss' Friends Font";
+}
+
+.score-prefix {
+    padding-top: 15rem;
+    color: white;
+    font-family: 'Nova Square', cursive;
+    font-size: 3rem;
+}
+
+#button {
+
+    padding-bottom: 20rem;
+}

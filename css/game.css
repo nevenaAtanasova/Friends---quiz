@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "Gabriel Weiss' Friends Font"; src: url('GABRWFFR.TTF')
+}
+
+* {
+    box-sizing: border-box;
+}
 body {
-  color:white;
+    color:white;
 } 
 
 .justify-center {
@@ -11,44 +18,39 @@ body {
 }
 #related {
     max-width: 70%;
-    max-height: 70%;
     display: block;
     margin: 0 auto;
 }
 #question {
-    display:flex;
+    display:block;
     margin-bottom:0.8rem;
-    width: 100%;
     background-color: #42a2d6;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-radius: 3rem;
     color:white;
     padding: 2rem 2.5rem;
+    max-width: 70%;
+    margin: 20px auto;
+    border: 0.125rem solid black;
+    font-family: "Comic Sans MS";
 }
-
-.grid-container {
-    width: 100%;
+.grid-answers {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 0px 70px;
-    margin-top: 20px;
-    grid-gap: 20px 0;
-    justify-content: space-between;
-    justify-content: center;
-    max-width: 100%;
-    overflow: hidden;
+    grid-gap: 10px;
+    padding-bottom:20px;
 }
+
 .choice-container {
-    background-color: white;
-    font-size: 1.5rem;
-    border-radius: 3rem;
-    width: 382px;
-    height: 52px;
-    color:#333333;
-    margin: 10px;
-    background-size: 100%;
-    background-repeat: no-repeat ;
+    width:100%;
     display: flex;
+    background-color: white;
+    color:#333333;
+    font-size: 1rem;
+    /*margin: 0.3125rem 0.25rem;*/
+    /*padding: 0px 70px;*/
+    border: 0.125rem solid black;
+    font-family: "Comic Sans MS";
 }
 
 .choice-container:hover {
@@ -64,8 +66,8 @@ body {
 }
 
 .choice-text {
-  text-align: center;
-  width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem
 }
 
 .correct {
@@ -83,7 +85,8 @@ body {
 
 .hud-prefix {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: "Gabriel Weiss' Friends Font";
 }
 
 .hud-main-text {
@@ -92,7 +95,7 @@ body {
 
 #progressBar {
     width: 20rem;
-    height:2rem;
+    height:1.5rem;
     border: 0.2rem solid forestgreen;
     margin-top: 0.5rem;
     border-radius: 50px;
@@ -105,8 +108,7 @@ body {
     background: forestgreen;
 }
 
-@media screen and (max-width: 768px){
-    .choice-container {
-        min-width: 40rem;
-    }
+#score {
+    font-family: "Gabriel Weiss' Friends Font";
 }
+
