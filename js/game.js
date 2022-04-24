@@ -13,7 +13,7 @@ let availableQuestions = []
 
 let questions = [
     {
-        related: 'pictures/4_RLP_MDG_071216ROSS_31JPG (1).jpg',
+        related: 'images/4_RLP_MDG_071216ROSS_31JPG (1).jpg',
         question:'What is Ross\' profession?',
         choice1: 'Astronomer',
         choice2: 'Museum tour guide',
@@ -22,7 +22,7 @@ let questions = [
         answer: 4,
     },
     {
-        related: 'pictures/6ff10ebac2721697-600x338.jpg',
+        related: 'images/6ff10ebac2721697-600x338.jpg',
         question:'What does Chandler have to do to get Joey to forgive him, after having kissed Cathy?',
         choice1: 'Wear blue lipstick',
         choice2: 'Move to Yemen',
@@ -31,7 +31,7 @@ let questions = [
         answer: 4,
     },
     {
-        related: 'pictures/main-qimg-e7c00c71aed1672fd26af28ddcbe255b-lq.jpg',
+        related: 'images/2734fd8af6549d24-600x338.jpg',
         question:'How many pages were in the letter Rachel wrote to Ross (front and back!)?',
         choice1: '14',
         choice2: '18',
@@ -40,7 +40,7 @@ let questions = [
         answer: 2,
     },
     {
-        related: 'pictures/08friends-phoebe6-jumbo.jpg',
+        related: 'images/08friends-phoebe6-jumbo.jpg',
         question:'What is the next line in the song, “Monica, Monica, have a happy Hanukkah”?',
         choice1: 'And please tell Joey, Christmas will be snowy',
         choice2: 'Spin the dreidel, Rachel',
@@ -49,7 +49,7 @@ let questions = [
         answer: 3,
     },
     {
-        related: 'pictures/phoebe-mike-david-friends-today-main-191210-3.jpg',
+        related: 'images/phoebe-mike-david-friends-today-main-191210-3.jpg',
         question:'Which city did Phoebe’s boyfriend, David, move to?',
         choice1: 'Tulsa',
         choice2: 'London',
@@ -58,7 +58,7 @@ let questions = [
         answer: 3,
     },
     {
-        related: 'pictures/MV5BNmU3ODAwNDctNDBmZi00MzY4LTg2MzMtODRmZDgxMjIzNjllXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_.jpg',
+        related: 'images/MV5BNmU3ODAwNDctNDBmZi00MzY4LTg2MzMtODRmZDgxMjIzNjllXkEyXkFqcGdeQXVyNjUxMjc1OTM@._V1_.jpg',
         question:'What was Monica’s nickname when she was a field hockey goalie?',
         choice1: 'Mon',
         choice2: 'Big Fat Goalie',
@@ -67,7 +67,7 @@ let questions = [
         answer: 2,
     },
     {
-        related: 'pictures/MV5BM2JkYjU5YTMtZmI5Yi00NTIxLWExYmEtNzlkODgwYTVhZjRhXkEyXkFqcGdeQXVyNDIzNDExOQ@@._V1_.jpg',
+        related: 'images/MV5BM2JkYjU5YTMtZmI5Yi00NTIxLWExYmEtNzlkODgwYTVhZjRhXkEyXkFqcGdeQXVyNDIzNDExOQ@@._V1_.jpg',
         question:'What is th ‘Gellar Cup’ made of?',
         choice1: 'A 3D woman coming out of a photo frame',
         choice2: 'A troll doll nailed to a two by four',
@@ -76,7 +76,7 @@ let questions = [
         answer: 2,
     },
     {
-        related: 'pictures/fede27a0c8fcdf47a4d39d1892669f8e.jpg',
+        related: 'images/fede27a0c8fcdf47a4d39d1892669f8e.jpg',
         question:'What instrument is played at Phoebe and Mike’s wedding?',
         choice1: 'Harp',
         choice2: 'Recorder',
@@ -85,7 +85,7 @@ let questions = [
         answer: 3,
     },
     {
-        related: 'pictures/MV5BMTM4ODYyOTE0OV5BMl5BanBnXkFtZTgwNTIyODU0MDE@._V1_.jpg',
+        related: 'images/MV5BMTM4ODYyOTE0OV5BMl5BanBnXkFtZTgwNTIyODU0MDE@._V1_.jpg',
         question:'How do Rachel and Monica end up getting their apartment back from Chandler and Joey?',
         choice1: 'They swap it for Knicks tickets',
         choice2: 'They promise to squeeze fresh orange juice for them each morning',
@@ -94,7 +94,7 @@ let questions = [
         answer: 4,
     },
     {
-        related: 'pictures/friends-trivia-18-matt-leblanc-aka-joey-tribbiani-auditioned-with-just-11-got-himself-this-after-his-first-paycheck-001.jpg',
+        related: 'images/friends-trivia-18-matt-leblanc-aka-joey-tribbiani-auditioned-with-just-11-got-himself-this-after-his-first-paycheck-001.jpg',
         question:'What is Joey\'s catchphrase?',
         choice1: 'How are ya?',
         choice2: 'Hey what\'s up?',
@@ -103,7 +103,7 @@ let questions = [
         answer: 3,
     },
     {
-        related: 'pictures/238922.jpg',
+        related: 'images/238922.jpg',
         question:'Which Friend dates Janice first?',
         choice1: 'Chandler',
         choice2: 'Joey',
@@ -112,7 +112,7 @@ let questions = [
         answer: 1,
     },
     {
-        related: 'pictures/Rachel-at-the-beach-house-with-her-friends.png',
+        related: 'images/Rachel-at-the-beach-house-with-her-friends.png',
         question:'What famous actor does Rachel go on date with after meeting him on a movie set?',
         choice1: 'Bruce Willies',
         choice2: 'Ben Stiller',
@@ -121,7 +121,7 @@ let questions = [
         answer: 3,
     },
     {
-        related: 'pictures/43e290037280002f-1200x675.jpg',
+        related: 'images/43e290037280002f-1200x675.jpg',
         question:'Which famous actor’s butt does Joey play in a shower scene?',
         choice1: 'Bruce Willis',
         choice2: 'Charlton Heston',
@@ -130,7 +130,7 @@ let questions = [
         answer: 4,
     },
     {
-        related: 'pictures/hqdefault.jpg',
+        related: 'images/hqdefault.jpg',
         question:'What is the name of Joey’s character in the commercial for opening milk cartons?',
         choice1: 'Mike',
         choice2: 'Kevin',
@@ -139,7 +139,7 @@ let questions = [
         answer: 2,
     },
     {
-        related: 'pictures/brad.jpg',
+        related: 'images/brad.jpg',
         question:'Brad Pitt and David Schwimmer’s characters cofounded what club in high school?',
         choice1: 'The "We Love Rachel Green Club."',
         choice2: 'The "I Hate Rachel Green Club."',
@@ -163,7 +163,12 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/end.html')
+        if(score == 1500) {
+            return window.location.assign('/winner.html')
+        }
+        else {
+            return window.location.assign('/end.html')
+        }
     }
 
     questionCounter++

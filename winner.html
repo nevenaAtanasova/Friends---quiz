@@ -1,17 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset ="UTF -8"/>
-        <link rel="stylesheet" href="game.css">
-        <title> Winner page </title>
-    </head>
-    <body>
-        <header>
-         Friends quiz
-        </header>
-        <div class = "container">
-            <h1>Congradulations, you win</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winner page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/winner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <!--Header and subheader-->
+    <header>
+        <div class="container flex"> 
+            <a href="index.html"><img class = "logo" src ="images/85-857608_friendstv-club-friends-logo-white-png.png" alt="Friends logo" width = "320" height="60"></a>
+            <h2 id="subheader">Q U I Z</h2>
+        </div>
+    </header>
+    <!--End-->
+    <section class="content">
+        <div id="home">
+            <h1 id="winner">Congradulations, you won!</h1>
+            <div class="score-prefix">
+                <h1 id="finalScore">0</h1>
+            </div>
+            <img id="winner-img" src="images/friendscast.0.0.1429818191.0.jpg" alt="Friends">
+            <div id="button">
+                <a href="index.html" class="btn">Home</a>
             </div>
         </div>
-    </body>
+    </section>    
+
+    <!--Footer-->
+    <footer class="footer">
+    <div class="container grid-3">
+        <div>
+        <h2 id="logo-copy">Friends quiz</h2>
+        <h5>Copyright &copy; 2022</h5>
+        </div>
+        <div>
+        <h4>Contact us:<br>friends-quiz@gmail.com</h4>
+        </div>
+        <div class="social">
+        <a href="#"><i class="fab fa-github fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+    </div>
+    </footer>
+    <script src="js/end.js"></script>
+</body>
 </html>
