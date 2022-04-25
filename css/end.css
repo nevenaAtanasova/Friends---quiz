@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
 #message {
     display: flex;
@@ -12,8 +11,9 @@
 }
 
 .score-prefix {
+    padding-top: 1rem;
     color: white;
-    font-family: 'Nova Square', cursive;
+    font-family: "Gabriel Weiss' Friends Font";
     font-size: 2rem;
 }
 

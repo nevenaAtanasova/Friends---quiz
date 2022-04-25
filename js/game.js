@@ -68,7 +68,7 @@ let questions = [
     },
     {
         related: 'images/MV5BM2JkYjU5YTMtZmI5Yi00NTIxLWExYmEtNzlkODgwYTVhZjRhXkEyXkFqcGdeQXVyNDIzNDExOQ@@._V1_.jpg',
-        question:'What is th ‘Gellar Cup’ made of?',
+        question:'What is the ‘Gellar Cup’ made of?',
         choice1: 'A 3D woman coming out of a photo frame',
         choice2: 'A troll doll nailed to a two by four',
         choice3: 'A fruit bowl found in the garbage',
@@ -149,7 +149,7 @@ let questions = [
     }
 ]
 
-const SCORE_POINTS = 100
+let SCORE_POINTS = 0
 const MAX_QUESTIONS = 15
 
 startGame = () => {
@@ -163,11 +163,8 @@ getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        if(score == 1500) {
+        if(score == 1000000) {
             return window.location.assign('/winner.html')
-        }
-        else {
-            return window.location.assign('/end.html')
         }
     }
 
@@ -201,20 +198,92 @@ choices.forEach(choice => {
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
 
         if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
+            switch(questionCounter) {
+                case 1:
+                    SCORE_POINTS = 100
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 2:
+                    SCORE_POINTS = 200
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 3:
+                    SCORE_POINTS = 300
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 4: 
+                    SCORE_POINTS = 500
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 5:
+                    SCORE_POINTS = 1000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 6:
+                    SCORE_POINTS = 2000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 7:
+                    SCORE_POINTS = 4000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 8:
+                    SCORE_POINTS = 8000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 9:
+                    SCORE_POINTS = 16000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 10:
+                    SCORE_POINTS = 32000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 11:
+                    SCORE_POINTS = 64000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 12:
+                    SCORE_POINTS = 125000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 13:
+                    SCORE_POINTS = 250000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 14:
+                    SCORE_POINTS = 500000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                case 15:
+                    SCORE_POINTS = 1000000
+                    incrementScore(SCORE_POINTS)
+                    break;
+                default:
+                    SCORE_POINTS = 0
+                    incrementScore(SCORE_POINTS)
+                    break;
+            }
+            
+            
         }
 
         selectedChoice.parentElement.classList.add(classToApply)
-
+        
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestion()
         },1000)
+        
+        if(classToApply === 'incorrect'){
+            localStorage.setItem('mostRecentScore', score)
+            return window.location.assign('/end.html')
+        }
     })
 })
 
 incrementScore = num => {
-    score +=num
+    score =num
     scoreText.innerText = score
 }
 startGame()

@@ -14,6 +14,8 @@
 }
 
 .score-prefix {
+    display:inline;
+    clear: both;
     color: white;
     font-family:  "Gabriel Weiss' Friends Font";
     font-size: 2rem;
