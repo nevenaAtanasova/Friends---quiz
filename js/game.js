@@ -174,7 +174,7 @@ getNewQuestion = () => {
 
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length)
     currentQuestion = availableQuestions[questionsIndex]
-    related.innerHTML = "<img src=\"" + currentQuestion.related + "\" width=\"640\" height=\"400\">"
+    related.innerHTML = "<img src=\"" + currentQuestion.related + "\" width=\"540\" height=\"360\">"
     question.innerText = currentQuestion.question
 
     choices.forEach(choice => {
@@ -287,3 +287,22 @@ incrementScore = num => {
     scoreText.innerText = score
 }
 startGame()
+
+var modal = document.getElementById("Rules");
+
+var span = document.getElementsByClassName("close")[0];
+
+window.onload = function () {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+  // When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}

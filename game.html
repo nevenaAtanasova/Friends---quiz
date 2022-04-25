@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/game.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-        <title>Quiz Page</title>
+        <title>Quiz</title>
     </head>
     <body>
           <!--Header and subheader-->
@@ -16,6 +16,36 @@
               </div>
             </header>
           
+          <!--Pop up-->
+          <div id="Rules" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 style="text-align:center; font-family: Gabriel Weiss\' Friends Font;">Rules</h2>
+                <p><br>Once selected the answer can’t be undone.<br>
+                  If you answer incorrectly to one of the questions you lose the game immediately.<br>
+                  The ultimate Friends fan wins one million pounds.<br>
+                  The amounts added to the score are listed below:</p>
+                  <div class="amount">
+                  <p>
+                  Question 1: 100 pounds<br>
+                  Question 2: 200 pounds<br>
+                  Question 3: 300 pounds<br>
+                  Question 4: 500 pounds<br>
+                  Question 5: 1,000 pounds<br>
+                  Question 6: 2,000 pounds<br>
+                  Question 7: 4,000 pounds<br>
+                  Question 8: 8,000 pounds<br>
+                  Question 9: 16,000 pounds<br>
+                  Question 10: 32,000 pounds<br>
+                  Question 11: 64,000 pounds<br>
+                  Question 12: 125,000 pounds<br>
+                  Question 13: 250,000 pounds<br>
+                  Question 14: 500,000 pounds<br>
+                  Question 15: 1,000,000 pounds</p>
+                </div>
+              </div>
+          </div>
+
           <!--Quiz-->
           <section class="content">
             <div id="home">
@@ -32,9 +62,10 @@
                     <p class="hud-prefix">
                       Score
                     </p>
-                    <h1 class="hud-main-text" id="score">
-                      0
-                    </h1>
+                      <h1 style="display:inline; font-family:Gabriel Weiss\' Friends Font">£</h1>
+                      <h1 class="hud-main-text" id="score" style="display:inline">
+                        0
+                      </h1>
                   </div>
                 </div>
                 <div id = "related" class="justify-center flex-column"></div>
@@ -72,7 +103,7 @@
                 <h4>Contact us:<br>friends-quiz@gmail.com</h4>
               </div>
               <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://github.com/nevenaAtanasova/nevenaAtanasova.github.io"><i class="fab fa-github fa-2x"></i></a>
                 <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
                 <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
               </div>
