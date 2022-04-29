@@ -59,12 +59,13 @@ header {
     display:inline-block;
     border: 2rem solid white;
     /*justify-content: center;*/
-    /*padding: 30px 20px;*/
+    padding: 20px 20px;
     overflow: hidden;
     
 }
 
 #home {
+    
     background-color: #333333;
     padding: 40px;
     border-radius: 5px;
@@ -74,6 +75,7 @@ header {
     font-family: "Gabriel Weiss' Friends Font";
     font-weight: normal;
     font-style: normal;
+    padding-bottom: 30px;
 }
 
 #intro {
@@ -88,7 +90,8 @@ header {
 }
 
 #button {
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-bottom:60px;
 }
 .btn {
     background-color: white;
